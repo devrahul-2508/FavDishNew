@@ -20,3 +20,4 @@ All Dishes | Favourites | Random Dish | Details | Add Dish | Notification
 - [Rx-JAVA](https://reactivex.io/) - An API for asynchronous programming with observable streams
 - [Glide](https://github.com/bumptech/glide) - An image loading library for Android.
 - [Material Components for Android](https://github.com/material-components/material-components-android) - Modular and customizable Material Design UI components for Android.
+- [Work Manager](https://developer.android.com/topic/libraries/architecture/workmanager) - an Android library that runs deferrable background work when the work's constraints are satisfied
