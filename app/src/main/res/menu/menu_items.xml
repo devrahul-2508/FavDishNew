@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/all_dishes"
+        android:title="All dishes"
+        android:icon="@drawable/ic_all_dishes"
+       />
+
+    <item android:id="@+id/favourite"
+        android:title="Favourite"
+        android:icon="@drawable/ic_wishlist"
+       />
+
+    <item android:id="@+id/random_dishes"
+        android:title="Random Dishes"
+        android:icon="@drawable/ic_random_dish"
+        />
+
+
+
+</menu>

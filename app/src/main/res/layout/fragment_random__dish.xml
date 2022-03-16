@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--TODO Step 2: Design the layout for Random Dish details as below. It is similar to dish details but I have added the same design in our case to keep it simple.-->
+<!--START-->
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/rl_dish_detail_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        tools:context=".view.fragments.DishDetailsFragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/fl_dish_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_dish_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@color/image_background"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/favorite_button_background"
+                    android:elevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/iv_favorite_dish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_favorite_unselected" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fl_dish_image"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Dish Title"
+                android:textColor="@color/bluegray"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_title"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="Type"
+                android:textColor="@color/bluegray"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_type"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Category"
+                android:textColor="@color/bluegray"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/tv_ingredients_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_category"
+                android:layout_margin="20dp"
+                android:text="Ingredients"
+                android:textColor="@color/bluegray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_ingredients"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ingredients_label"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:text="Ingredients Value"
+                android:textColor="@color/bluegray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_cooking_direction_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_ingredients"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Cooking Direction"
+                android:textColor="@color/bluegray"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_cooking_direction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cooking_direction_label"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/bluegray"
+                android:textSize="14sp"
+                android:text="Ingredients Value" />
+
+            <TextView
+                android:id="@+id/tv_cooking_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_cooking_direction"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textColor="@color/bluegray"
+                android:textSize="12sp"
+                android:text="Cooking Time" />
+        </RelativeLayout>
+    </ScrollView>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <!--END-->

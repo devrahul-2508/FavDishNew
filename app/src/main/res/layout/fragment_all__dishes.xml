@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragments.AllDishes">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginTop="30sp">
+
+            <TextView
+                android:layout_weight="4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALL DISHES"
+                android:textStyle="bold"
+                android:textColor="@color/orange"
+                android:layout_marginLeft="10dp"
+                android:textSize="25sp">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/filterDish"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_filter"
+                android:layout_gravity="right"
+                android:layout_marginEnd="10dp"/>
+            <ImageView
+                android:id="@+id/addNewDish"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_add"
+                android:layout_gravity="right"
+                android:layout_marginEnd="10dp"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDishesList"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp"/>
+
+    <TextView
+        android:id="@+id/noDishesTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:text="No Dishes Yet"
+        android:visibility="visible"/>
+
+
+</FrameLayout>
