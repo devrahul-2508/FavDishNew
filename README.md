@@ -6,6 +6,10 @@ All Dishes | Favourites | Random Dish | Details | Add Dish | Notification
 --- | --- | --- |--- |--- |---
 ![](https://github.com/devrahul-2508/FavDishNew/blob/main/art/AllDishes.jpg) | ![](https://github.com/devrahul-2508/FavDishNew/blob/main/art/FavouriteDishes.jpg) | ![](https://github.com/devrahul-2508/FavDishNew/blob/main/art/RandomDishes.jpg) | ![](https://github.com/devrahul-2508/FavDishNew/blob/main/art/Details.jpg) | ![](https://github.com/devrahul-2508/FavDishNew/blob/main/art/Add%20Dish.jpg) |![](https://github.com/devrahul-2508/FavDishNew/blob/main/art/Notifications.jpg) 
 
+## Score
+![](https://github.com/devrahul-2508/FavDishNew/blob/main/art/summary.png)
+![](https://github.com/devrahul-2508/FavDishNew/blob/main/art/jetpack.png)
+
 ## Built With 🛠
 
 - [Kotlin](https://kotlinlang.org/) - First class and official programming language for Android development.
